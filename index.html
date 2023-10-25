@@ -3,10 +3,108 @@
     <head>
         <meta charset="UTF-8">
         <meta content="width=device-width, initial-scale=1.0">
-        <title> Dede Page</title>
+        <title>Home Page</title>
         <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>
-        <script src=".js/script.js"></script>
+        <header class="header">
+            <div class="nav-logo">
+                <img src="./assets/revo.png" alt="revo">
+            </div>
+            <div class="nav">
+                <a id="home-link" class="nav-item" href="index.html">Home</a>
+                <a id="profil-link" class="nav-item" href="profile.html">My Profile</a>
+                <a id="portofolio-link" class="nav-item" href="portofolio.html">Portofolio</a>
+                <a href="#message-us" class="nav-item">Message Us</a>
+            </div>
+        </header>
+        <section class="banner">
+            <div class="greetings">
+                <h1>Hi, My Name Dede Miftahul Anwar</h1>
+                <p>Im a fullstack Developer</p>
+            </div>
+            <div>
+                <img 
+                    class="img-slideshow"
+                    src="https://exeedcollege.com/wp-content/uploads/2021/10/Integrating-technology-in-education-scaled-1.jpg"
+                />
+                <img 
+                    class="img-slideshow"
+                    src="https://www.dicoding.com/blog/wp-content/uploads/2021/09/Blog_8_September_-_Memahami_Apa_Itu_Internet_of_Things.jpg"
+                />
+                <img 
+                    class="img-slideshow"
+                    src="https://images.ctfassets.net/szez98lehkfm/5RPbDihFheFvN1RWhyRfbY/fb286bb568a3d5c093419dee333113e8/MyIC_Article_114191"
+                />
+                <!--
+                <button onclick="plusDivs(-1)">Previous</button>
+                <button onclick="plusDivs(1)">Next</button>
+                -->
+
+            </div>
+        </section>
+        <section class="headquarters">
+            <h1>Our Headquarters</h1>
+            <div class="hq-items">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+        </section>
+        <section id="message-us">
+            <div class="form-left">
+                <h1>Message Us</h1>
+                <form class="form-form-left" name="message-form" onsubmit="return validateForm()">
+                    <table class="form-container">
+                        <tr>
+                            <td>Name</td>
+                            <td>:</td>
+                            <td><input id="nama" name="name" type="text" placeholder="Name"></td>
+                        </tr>
+                        <tr>
+                            <td>Tanggal lahir</td>
+                            <td>:</td>
+                            <td><input id="date" name="date" type="date" placeholder="Tanggal lahir"></td>
+                        </tr>
+                        <tr>
+                            <td>Jenis Kelamin</td>
+                            <td>:</td>
+                            <td>
+                                <input type="radio" id="laki-laki" name="jenis-kelamin" value="Laki-laki">
+                                <label for="laki-laki">Laki-laki</label>
+                                <input type="radio" id="perempuan" name="jenis-kelamin" value="Perempuan">
+                                <label for="perempuan">Perempuan</label>
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Pesan</td>
+                            <td>:</td>
+                            <td>
+                                <textarea id="pesan" name="pesan" placeholder="Pesan"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <input id="submit" type="submit" value="Submit">
+                            </td>
+                        </tr>
+                    
+                    </table>
+                </form>
+            </div>
+            <div class="form-right">
+                <p>Nama: <span id="nama-result"></span></p>
+                <p>Tanggal lahir: <span id="tanggallahir-result"></span></p>
+                <p>Jenis Kelamin: <span id="jeniskelamin-result"></span></p>
+                <p>Pesan: <span id="pesan-result"></span></p>
+            </div>
+        </section>
+        <footer class="footer">
+            <p class="footer-text">Made by Dede Miftahul Anwar</p>
+        </footer>
+        <script src="./js/script.js"></script>
     </body>
 </html>
