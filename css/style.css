@@ -207,6 +207,19 @@ body{
     box-sizing: border-box;
   }
 
+  @media only screen and (max-width: 800px){
+    .project {
+        align-items: center;
+        flex-direction: column;
+        display: flex;
+        margin: 20px;
+        padding: 10px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+  }
+
   @media only screen and (max-width: 600px){
     .header{
         flex-direction: column;
@@ -254,16 +267,6 @@ body{
     }
     .headquarters{
         padding: 3em;
-    }
-
-    .project {
-        flex-direction: column;
-        display: flex;
-        margin: 20px;
-        padding: 10px;
-        background-color: #fff;
-        border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     }
   }
 
